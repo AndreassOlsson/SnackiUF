@@ -1,0 +1,535 @@
+/* -------------------- Setup ------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+    font-size: 36px;
+    --cream: #F6F2E6;
+    --darkCream: #C6A07C;
+    --blackCream: #32231e;
+    --fontGrey: #585858;
+    --ctaGreen: rgb(100, 221, 100);
+    --ctaColor: #92aba3;
+    --mainBlack: #000000;
+    --mainWhite: #ffffff;
+    
+    --heroBlackTint: rgba(0, 0, 0, 0.3);
+    --menuBlackTint: rgba(0, 0, 0, 0.4);
+    --menuHoverTint: rgba(255, 255, 255, 0.1);
+
+    --headerLine-height: 1.05;
+    transition: all 0.5s ease;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* -------------------- End of Setup ------------------- */
+
+
+
+/* -------------------- Hero ------------------- */
+.hero {
+    background-image: url("Images/eat/eat_5.jpg");
+    background-color: var(--heroBlackTint);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.hero .logoContainer {  
+    position: absolute;
+    top: 6%;
+}
+.hero .logoContainer img {
+    height: 100%;
+    width: 220px;
+}
+.hero .sloganContainer {
+    text-align: center;
+    width: 70%;
+}
+.hero .sloganContainer h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--cream);
+    line-height: var(--headerLine-height);
+}
+.hero .heroNav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: inherit;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.floatLeft, .floatRight {
+    z-index: 1;
+    margin-bottom: 0.4rem;
+}
+.hero .heroNav .floatLeft a, .hero .heroNav .floatRight a {
+    margin: 0rem 2.5rem 0rem 2.5rem;
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: space-between;
+}
+.hero .heroNav a:hover {
+    cursor: pointer;
+    color: var(--darkCream);
+}
+.contactCardParent {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}
+.contactCard1, .contactCard2, .contactCard3 {
+    background-color: var(--cream);
+    border-radius: 1rem;
+    z-index: 2;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    overflow: hidden;
+    border: 4px solid var(--darkCream);
+}
+.contactCard2 {
+    right: 12rem;
+}
+.contactCard3 {
+    bottom: 0;
+}
+.contactCard1 h3, .contactCard2 h3, .contactCard3 h3 {
+    padding: 1rem;
+    padding-top: 0;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+#contactCloseBtn1, #contactCloseBtn2, #contactCloseBtn3 {
+    position: absolute;
+    color: black;
+    right: 0;
+    top: 0;
+    font-size: 1rem;
+    margin: 0.4rem;
+}
+#contactCloseBtn1:hover, #contactCloseBtn2:hover, #contactCloseBtn3:hover {
+    cursor: pointer;
+    color: rgb(124, 124, 124);
+}
+.displayFalse {
+    opacity: 0;
+    pointer-events: none;
+}
+.displayTrue {
+    opacity: 1;
+    pointer-events: all;
+}
+/* ----------------- End of Hero -------------------- */
+
+
+/* ----------------- Menu -------------------- */
+.menu {
+    background-image: url(Images/logo/Snacki_cream_trans.png);
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.makeshiftmenu {
+    display: none;
+}
+.stepsContainer {
+    position: relative;
+    top: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    width: 80vw;
+    margin: auto;
+    height: fit-content;
+    max-width: 1000px;
+}
+.stepsContainer .option {
+    flex: 1 1 400px;
+    margin: 1rem 0.1rem 1rem 0.1rem;
+    display: flex;
+    flex-direction: column;
+}
+.stepsContainer .option .imgContainer {
+    height: 12rem;
+    background-size: cover;
+    background-color: var(--menuBlackTint);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkCream);
+    background-position: 50% 20%;
+}
+.productsNav {
+    background-image: url(Images/eat/eat_2.jpg);
+}
+.processNav {
+    background-image: url(Images/eat/eat_4.jpg);
+}
+.aboutUsNav {
+    background-image: url(Images/amir/amir_1.jpg);
+}
+.option .imgContainer:hover {
+    background-color: var(--menuHoverTint);
+    cursor: pointer;
+}
+.menu .menuFooter {
+    position: relative;
+    top: 12rem;
+    text-align: center;
+    width: 38%;
+    margin: auto;
+    font-weight: 550;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    padding-bottom: 20rem;
+}
+.menu .menuFooter span:hover {
+    cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+    .stepsContainer .option {
+        flex: 1 1 400px;
+    }
+    .stepsContainer .option .imgContainer {
+        height: 16rem;
+        transition: all 0.5s ease;
+    }
+}
+
+/* ----------------- End of menu -------------------- */
+
+
+
+/* ----------------- Products -------------------- */
+.products {
+    height: fit-content;
+}
+.products .smallHero {
+    background-image: url(Images/eat/eat_2.jpg);
+}
+.productsSecondaryContainer {
+    padding-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./Images/logo/Snacki_white_trans2.png);
+    background-size: contain;
+}
+.productsSecondaryContainer .optHeader {
+    position: relative;
+    /* border: 2px solid green; */
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+.generalProdInfo {
+    position: relative;
+    top: 16rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 20rem;
+    max-width: 1400px;
+    /* border: 2px solid green; */
+}
+.generalProdInfo .prodContent {
+    flex: 1 1 525px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: fit-content;
+    margin: 3rem auto 3rem auto;
+}
+.generalProdInfo .textVar1 {
+    width: 40vw;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+.generalProdInfo img {
+    max-height: 40vh;
+    object-fit: contain;
+}
+/* ----------------- End of products -------------------- */
+
+
+
+/* ----------------- Process -------------------- */
+.process {
+    position: relative;
+    height: fit-content;
+}
+.process .smallHero {
+    background-image: url(Images/eat/eat_4.jpg);
+}
+.process .processSecondaryContainer {
+    background-image: url(Images/logo/Snacki_white_trans2.png);
+    background-size: contain;
+    padding-bottom: 18rem;
+}
+.processSecondaryContainer .generalProdInfo {
+    height: fit-content;
+    position: relative;
+    top: 12rem;
+    margin-bottom: 0;
+    /* border: 2px solid green; */
+}
+.processSecondaryContainer .prodContent {
+    flex: 0 1 600px;
+}
+.process .textVar1 {
+    width: 100vw;
+}
+.process .textVar1 h1 {
+    font-size: 2.4rem;
+}
+.process .textVar1 p {
+    width: 80%;
+    font-size: 1.6rem;
+    max-width: 800px;
+}
+
+/* ----------------- End of process -------------------- */
+
+
+
+/* ----------------- About us -------------------- */
+.aboutUs {
+    background-image: url(Images/logo/Snacki_white_trans2.png);
+    background-size: contain;
+}
+.aboutUs .smallHero {
+    background-image: url(Images/amir/amir_1.jpg);
+    background-position: 50% 15%;
+}
+.profiles {
+    position: relative;
+    top: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    height: fit-content;
+    max-width: 1000px;
+    padding-bottom: 12rem;
+}
+.profile {
+    flex: 0 1 100px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 3rem 2rem 3rem 2rem;
+    max-width: 320px;
+}
+.profile .imgContainer {
+    max-width: 320px;
+    max-height: 380px;
+}
+.profile .imgContainer img {
+    width: 320px;
+    height: 380px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    float: left;
+    flex: 1 1 25rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    perspective: 1000px;
+}
+.textbox {
+    position: absolute;
+    height: 380px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    z-index: 0;
+    cursor: pointer;
+}
+.textbox p {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.profile img {
+    max-width: 320px;
+    max-height: 380px;
+    object-fit: cover;
+    object-position: 50% 25%;
+    float: left;
+    flex: 1 1 25rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.profile img:hover {
+    cursor: pointer;
+    filter: brightness(108%);
+}
+.profileInfo  {
+    width: 320px;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 2;
+}
+.profileInfo h3 {
+    font-weight: lighter;
+    color: var(--darkCream);
+    margin: 0;
+    margin-top: 0.4rem;
+    font-size: 1.8rem;
+}
+.profileInfo h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    width: 320px;  
+    margin: 0;
+    margin-bottom: 0.8rem;
+}
+.profile h5 {
+    margin-top: 3rem;
+    font-weight: lighter;
+}
+
+.cardShadow {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.footer {
+    margin-top: 12rem;
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    width: 100%;
+    z-index: 1;
+    padding-left: 0;
+}
+.footer ul li a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.footer ul li a:hover {
+    cursor: pointer;
+    color: var(--darkCream);
+}
+.footer ul :last-child :hover {
+    color: var(--cream);
+}
+/* ----------------- End of about us -------------------- */
+
+
+#textArea {
+    display: none;
+}
+.ide {
+    height: 14rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 18rem;
+    padding-bottom: 14rem;
+}
+.ide p {
+    margin: 0;
+    padding: 0;
+}
+.ide h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.vector {
+    margin-top: 1rem;
+    height: 100px;
+    width: 100%;
+}
+
+.generalProdInfo .prodContent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#insta1, #insta2, #insta3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--darkCream);
+}
+#igtext1, #igtext2, #igtext3 {
+    font-family: "signika";
+    color: black;
+    font-size: 1.6rem;
+    margin-left: 0.6rem;
+    font-weight: 600;
+    padding: 1rem;
+    padding-left: 0;
+}
+.location {
+    position: relative;
+    top: 11rem;
+}
+.location h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 10;
+}
+.smallHeroHeader h1 {
+    font-size: 1rem;
+}
+.source {
+    font-size: 0.5rem;
+    color: var(--cream);
+    text-decoration: none;
+}

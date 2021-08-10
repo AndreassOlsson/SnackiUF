@@ -1,0 +1,125 @@
+.liveDisplay {
+    position: relative;
+    top: 12rem;
+    height: 700px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1200px;
+    /* border: 2px solid green; */
+}
+.liveDisplay .card, #liveCard {
+    z-index: 4;
+    transform-style: preserve-3d;
+    height: 600px;
+    width: 32rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    background-color: white;
+}
+.liveDisplay .card .chips {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 400px;
+
+}
+.liveDisplay .card .chips img {
+    width: 20rem;
+    z-index: 4;
+    position: relative;
+    right: 4px;
+    margin: 1.4rem 0 1.8rem 0;
+}
+.liveDisplay .card .chips .circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to bottom,
+        var(--cream),
+        var(--darkCream) 
+        );
+    filter: blur(80px);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+.liveDisplay .card .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+}
+.liveDisplay .card .info h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.liveDisplay .card .info h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--darkCream);
+    font-weight: 550;
+    text-align: center;
+    width: 100%;
+}
+.liveDisplay .card .info h3 span {
+    color: var(--mainBlack);
+}
+.liveDisplay .card .info .contact {
+    height: 4rem;
+    width: 60%;
+    z-index: 3;
+    display: flex;
+}
+.liveDisplay .card .info .contact button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: var(--ctaColor);
+    color: var(--mainWhite);
+    font-weight: 650;
+    font-size: 1.4rem;
+    font-family: 'Signika', sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+    margin-top: 0.4rem;
+}
+.liveDisplay .card .info .contact button:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    
+    .liveDisplay {
+        top: 24rem;
+        height: fit-content;
+        margin-bottom: 12rem;
+    }
+    .liveDisplay .card, #liveCard {
+        height: 20rem;
+        width: 270px;
+        overflow: visible;
+    }
+    .liveDisplay .card .chips img, .circle{
+        position: relative;
+        bottom: 10rem;
+        width: 16rem;
+    }
+    .liveDisplay .card .info {
+        position: relative;
+        bottom: 12rem;
+    }
+    .liveDisplay .card .info h1 {
+        font-size: 0.8rem
+    }
+    .liveDisplay .card .info h3 {
+        font-size: 1.2rem;
+    }
+}

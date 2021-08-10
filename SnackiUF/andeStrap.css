@@ -1,0 +1,271 @@
+
+body {
+    --cream: #F6F2E6;
+    --darkCream: #C6A07C;
+}
+
+
+/* ----------------- Small Hero -------------------- */
+.smallHero {
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+.smallHeroHeader {
+    color: var(--darkCream);
+}
+@media screen and (min-width: 1800px) {
+    .smallHero {
+        height: 90vh;
+    }
+}
+/* ----------------- Transitions -------------------- */
+.transitionTop_parent {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.transitionBottom_parent {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.transitionCreamTop {
+    width: 100%;
+    background-image: url(Images/textures/ripped_cream_top.png);
+    background-size: contain;
+    height: 4px;
+    background-repeat: repeat;
+}
+.transitionCreamBottom {
+    width: 100%;
+    background-image: url(Images/textures/ripped_cream_bottom.png);
+    background-size: contain;
+    height: 4px;
+    background-repeat: repeat;
+}
+.transitionWhiteTop {
+    background-image: url(Images/textures/ripped_white_top.png);
+    width: 100%;
+    background-size: contain;
+    height: 4px;
+    background-repeat: repeat;
+}
+.transitionWhiteBottom {
+    background-image: url(Images/textures/ripped_white_bottom.png);
+    width: 100%;
+    background-size: contain;
+    height: 4px;
+    background-repeat: repeat;
+}
+/* -------------------- optHeader ------------------- */
+.optHeader {
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    /* border: 2px solid green; */
+    padding: 0;
+    height: fit-content;
+}
+.optHeader h5 {
+    color: var(--darkCream);
+    margin: 0;
+    font-size: 1.3rem;
+}
+.optHeader h1 {
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.dropDown button {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 2.4rem;
+    border-radius: 4px;
+}
+.dropDown button i {
+    margin-left: 0.8rem;
+    font-size: 2rem;
+    color: var(--darkCream);
+    transform: rotate(-90deg);
+    transition: all 0.2s ease;
+}
+.dropDown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cream);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropDown-content a {
+    color: var(--darkCream);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.dropDown-content a.selected {
+    background-color: var(--darkCream);
+    color: var(--cream);
+}
+.dropDown-content a:hover {
+    color: var(--cream);
+    background-color: var(--darkCream);
+}
+.dropDown:hover .dropDown-content {
+    display: block;
+    animation: translateX 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+.dropDown:hover .dropBtn i {
+    transform: rotate(0deg);
+    transition: all 0.2s ease;
+}
+
+
+@keyframes translateX {
+    0% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    
+    80% {
+      transform: translateX(-5px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+
+
+/* -------------------- mainHeader ------------------- */
+.mainHeader {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    top: 6rem;
+}
+.mainHeader h5 {
+    color: var(--darkCream);
+    margin: 0;
+    margin-top: 0rem;
+    font-size: 1.3rem;
+}
+.mainHeader h1 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.mainHeader .line {
+    border-bottom: 7px solid var(--darkCream);
+    height: 16px;
+    width: 10%;
+}
+/* -------------------- textVar1 ------------------- */
+.textVar1 {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.textVar1  h1 {
+    font-size: 2.4rem; 
+}
+.textVar1 p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+/* -------------------- keyValue ------------------- */
+.keyValueParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+.keyValueParent h1 {
+    margin: auto;
+}
+.keyValue {
+    display: flex;
+    flex-direction: row;
+}
+.keyValue ul {
+    list-style: none;
+    font-size: 2rem;
+}
+.keyValue li {
+    margin: 0;
+    text-align: left;
+}
+.keyValue .key {
+    text-align: left;
+    border-left: 6px solid var(--darkCream);
+    padding-left: 1rem;
+}
+.keyValue .value li {
+    text-align: right;
+}
+/* -------------------- Cta button ------------------- */
+button.cta {
+    height: 100%;
+    width: fit-content;
+    border: none;
+    background-color: var(--ctaColor);
+    color: var(--mainWhite);
+    font-weight: 650;
+    font-size: 1.4rem;
+    font-family: 'Signika', sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+    margin: 3rem;
+    margin-top: 0.4rem;
+    padding: 1rem 3rem 1rem 3rem;
+}
+button.cta:hover {
+    cursor: pointer;
+}
+/* -------------------- Span ------------------- */
+span {
+    color: var(--darkCream);
+}
+/* -------------------- h1 ------------------- */

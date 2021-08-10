@@ -1,0 +1,32 @@
+@media screen and (max-width: 415px) {
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */ 
+        .menu {
+            display: none;
+        }
+        .makeshiftmenu {
+            display: inline-block;
+            background-image: url(images/logo/Snacki_cream_trans.png);
+            background-size: cover;
+        }
+        .makeshiftmenu h1 {
+            font-size: 2.2rem;
+            width: 80%;
+            text-align: center;
+            margin: 5rem auto 5rem auto;
+        }
+        .makeshiftmenu p {
+            font-size: 1.3rem;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 6rem;
+            font-weight: 600;
+        }
+        .productsSecondaryContainer{
+            position: relative;
+            top: 0rem;
+            padding-bottom: 2rem;
+        }
+      }
+}

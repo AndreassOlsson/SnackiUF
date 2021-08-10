@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="liveDisplay.css">
+    <link rel="stylesheet" href="andeStrap.css">
+    <link rel="stylesheet" href="dynamicDesign.css">
+    <link rel="stylesheet" href="fix.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0aab346fa.js" crossorigin="anonymous"></script>
+    <title>SnackiUf</title>
+    <link rel="shortcut icon" href="Images/logo/snacki_logo_icon_RCB_icon.ico">
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <div class="hero">
+            <div class="logoContainer">
+                <img src="Images/logo/Snacki_logo.png" alt="SnackiUF logo">
+            </div>
+            <div class="sloganContainer">
+                <h1><span style="color:var(--darkCream)">Svinn</span>goda snacks</h1>
+            </div>
+            <div class="heroNav">
+                <div class="floatLeft">
+                    <a id="productsBtn1">Produkter</a>
+                    <a id="processBtn1">Process</a>
+                </div>
+                <div class="floatRight">
+                    <a id="aboutUsBtn1">Om oss</a>
+                    <a class="contactBtn1" id="contactBtn1">Kontakta oss</a>
+                </div>
+            </div>
+            <div class="contactCardParent">
+                <div class="contactCard1 displayFalse" id="contactCard1">
+                    <h3>info@snackiuf.se</h3>
+                    <!-- <button id="copy1">Kopiera mailaddress</button> -->
+                    <i class="fas fa-times" id="contactCloseBtn1"></i>
+                    <i id="insta1" class="fab fa-instagram"><span id="igtext1">@snackiuf</span></i>
+                </div>
+            </div>
+            
+            <div class="transitionTop_parent">
+                <div class="transitionCreamTop"></div>
+            </div>
+    </div>
+    <!-- End of Hero -->
+
+
+    
+    <!-- Menu -->
+    <div class="menu">
+        <div class="menuContainer">    
+            <div class="mainHeader">
+                <h5>Välkommen till SnackiUF</h3>
+                <h1>Vad letar du efter?</h1>
+                <div class="line"></div>
+            </div>
+            <div class="stepsContainer">
+                <div class="option" id="productsBtn2">
+                    <div class="imgContainer productsNav">
+                        <h5>Produkter</h5>
+                    </div>
+                </div>
+                <div class="option" id="processBtn2">
+                    <div class="imgContainer processNav">
+                        <h5>Process</h5>
+                    </div>
+                </div>
+                <div class="option" id="aboutUsBtn2">
+                    <div class="imgContainer aboutUsNav">
+                        <h5>Om oss</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menuFooter">
+            <p>OBS vi säljer inga chips via hemsidan just nu. Kontakta oss <span id="contactBtn3">här</span>.</p>
+            <div class="contactCardParent">
+                <div class="contactCard3 displayFalse" id="contactCard3">
+                    <h3>info@snackiuf.se</h3>
+                    <!-- <button id="copy1">Kopiera mailaddress</button> -->
+                    <i class="fas fa-times" id="contactCloseBtn3"></i>
+                    <i id="insta3" class="fab fa-instagram"><span id="igtext3">@snackiuf</span></i>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="makeshiftmenu">
+        <h1>Välkommen till <span>Snacki UF</span></h1>
+        <p>Snacki UF är ett UF företag som tillverkar <span>svinngoda rotfruktschips</span> av matsvinn. Här kan du ta dig en titt på 
+            våra produkter, processer och vilka vi är. Observera att vi inte säljer chips via hemsidan för tillfället.
+        </p>
+    </div>
+    <!-- End of Menu -->
+
+
+
+    <!-- Products -->
+    <div class="products" id="productsSection">
+        <div class="transitionBottom_parent">
+            <div class="transitionCreamBottom"></div>
+        </div>
+        <div class="smallHero">
+            <div class="smallHeroHeader"><h1>Produkter</h1></div>
+            <div class="transitionTop_parent">
+                <div class="transitionWhiteTop"></div>
+            </div>
+        </div>
+        <div class="productsSecondaryContainer">
+            <div class="optHeader">
+                <h5>Just nu erbjuder Snacki totalt</h5>
+                <h1>1 slags chipspåse</h1>
+                <div class="dropDown">
+                    <button class="dropBtn">Snacki Rotfruktschips - Potatis, Sötpotatis, Palsternacka, Rödbeta <i id="angleDown" class="fas fa-angle-down"></i></button>
+                    <div class="dropDown-content">
+                        <a class="selected">Snacki Rotfruktschips - Potatis, Sötpotatis, Palsternacka, Rödbeta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3D product display 
+            <div class="liveDisplay">
+                <div class="card" id="liveCard">
+                    <div class="chips">
+                        <div class="circle"></div>
+                        <img id="chipsImg" src="./Images/products/placeholder.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h1>SnackiUF Rotfruktschips</h1>
+                        <h3>Palsternacka<span>,</span> Sötpotatis<span>,</span> Rödbeta</h3>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- General ProdInfo -->
+            <div class="generalProdInfo">
+
+                <!-- "Svinngoda och Svinnbra" -->
+                
+                <div class="textVar1 prodContent">
+                    <h1><span>Snacki</span> Rotfruktschips</h1>
+                    <p>Snacki Rotfruktschips - Potatis, Sötpotatis, Palsternacka, Rödbeta kombinerar flera naturligt goda smaker i
+                        en och samma påse. Chipsen tillverkas i Saluhallen, Västerås, och med stor omsorg!
+                    </p>
+                </div>
+
+                <!-- Produktbild -->
+                <img id="prodContent" class="prodContent" 
+                src="./Images/products/chips_tape.png" alt="">
+
+                <!-- Inga konstigheter -->
+                <div class="textVar1 prodContent">
+                    <h1><span>Svinn</span>goda och <span>Svinn</span>bra</h1>
+                    <p>De här chipsen är gjorda på överbliven rotfrukt. Rotfrukterna är av god kvalité men kan ha några
+                        små imperfektioner som gör de inte intresserar dagens kunder. Vi gör alltså matsvinn till något gott och spännande!
+                    </p>
+                </div>
+                
+                <div class="textVar1 prodContent">
+                    <h1><span>Inga</span> konstigheter</h1>
+                    <p>Vi på SnackiUF tar våra konsumenter på stort allvar och
+                        avstår helt från konserveringsmedel eller tillsatser när 
+                        vi tillagar våra rotfruktschips. Våra chips har helt enkelt ingenting 
+                        att dölja!
+                    </p>
+                </div>
+                
+                <!-- Näringsvärden 
+                <div class="textVar1 keyValueParent prodContent">
+                    <h1><span>Näring</span>svärde</h1>
+
+                    <div class="keyValue">
+                        <ul class="key">
+                            <li>Fett</li>
+                            <li>Varav mättat</li>
+                            <li>Kolhydrater</li>
+                            <li>Varav sockerarter</li>
+                            <li>Protein</li>
+                            <li>Salt</li>
+                        </ul>
+                        <ul class="value">
+                            <li>20g</li>
+                            <li>2g</li>
+                            <li>55g</li>
+                            <li>10g</li>
+                            <li>14g</li>
+                            <li>2g</li>
+                        </ul>
+                    </div>
+
+                </div>-->
+                
+            </div>
+        </div>
+    </div>
+    <!-- End of Products -->
+
+
+
+    <!-- Process -->
+    <div class="process" id="processSection">
+        <div class="transitionBottom_parent">
+            <div class="transitionWhiteBottom"></div>
+        </div>
+        <div class="smallHero">
+            <div class="smallHeroHeader"><h1>Process</h1></div>
+            <div class="transitionTop_parent">
+                <div class="transitionWhiteTop"></div>
+            </div>
+        </div>
+        <div class="processSecondaryContainer">
+            <div class="optHeader">
+                <h5>Just nu erbjuder Snacki totalt</h5>
+                <h1>1 slags chipspåse</h1>
+                <div class="dropDown">
+                    <button class="dropBtn">Snacki Rotfruktschips - Potatis, Sötpotatis, Palsternacka, Rödbeta <i id="angleDown2" class="fas fa-angle-down"></i></button>
+                    <div class="dropDown-content">
+                        <a class="selected">Snacki Rotfruktschips - Potatis, Sötpotatis, Palsternacka, Rödbeta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="generalProdInfo">
+                    <div class="textVar1 prodContent ">
+                        <h1>Steg <span>1</span></h1>
+                        <p>Allt börjar med att fina rotfrukter hämtas från lokala matbutiker.
+                        Dessa rotfrukter hade annars slängts och bidragit till matsvinnet.
+                        </p>
+                        <img class="vector" id="potato" src="images/vectors/potato_vector.png" alt="">
+                        <a class="source" href="https://www.freepik.com/vectors/food">Food vector created by 0melapics - www.freepik.com</a>
+                    </div>
+                    <div class="textVar1 prodContent">
+                        <h1>Steg <span>2</span></h1>
+                        <p>Därefter friteras chipsen omsorgsfullt för hand för att garantera 
+                            den absolut bästa kvalitén. Chipsen saltas sedan lätt.
+                        </p>
+                        <img class="vector" id="knife" src="images/vectors/knife_vector.png" alt="">
+                        <a class="source" href="https://www.freepik.com/vectors/background">Background vector created by rawpixel.com - www.freepik.com</a>
+
+                    </div>
+                    <div class="textVar1 prodContent">
+                        <h1>Steg <span>3</span></h1>
+                        <p>Sist men inte minst paketeras chipsen i cellofanpåsar och öppningen 
+                            sluts så att förpackningen blir lufttät. Nu är de redo att ätas!
+                        </p>
+                        <img class="vector" id="people" src="images/vectors/people_vector.png" alt="">
+                        <a class="source" href="https://www.freepik.com/vectors/people">People vector created by pikisuperstar - www.freepik.com</a>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Process-->
+
+
+
+    <!-- About us -->
+    <div class="aboutUs" id="aboutUsSection">
+        <div class="transitionBottom_parent">
+            <div class="transitionWhiteBottom"></div>
+        </div>
+        <div class="smallHero"> 
+            <div class="smallHeroHeader"><h1>Om oss</h1></div> 
+            <div class="transitionTop_parent">
+                <div class="transitionWhiteTop"></div>
+            </div>
+        </div>
+        <div class="aboutUsSecondaryContainer">
+            <div class="mainHeader">
+                <h5>Det här är vi</h3>
+                <h1>Klicka på bilderna!</h1>
+                <div class="line"></div>
+            </div>
+            <div class="textVar1 ide">
+                <h1>Snackis <span>affärsidé</span></h1>
+                <p>Snacki UF erbjuder goda miljövänliga snacks gjorda av lokala matbutikers råvaror som annars hade gått till spillo. Allt för att möta den moderna konsumenten.</p>
+            </div>
+            <div class="profiles">
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="alexanderImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Alexander.jpg" alt="">
+                        <div id="alexanderText" class="textbox cardShadow displayFalse"><p>Med övergripande koll på allt ser Alexander till att Snacki UF hela tiden styrs åt rätt håll. Han passar utmärkt i rollen som VD då han är organiserad och målmedveten.</p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Alexander<br>Samuelsson</h1>
+                        <h3>VD</h3>
+                    </div>
+                    <h5><em>"Try not to become a man of success. Rather become a man of value."</em></h5>
+                </div>
+
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="jonnaImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Jonna.jpg" alt="">
+                        <div id="jonnaText" class="textbox cardShadow displayFalse"><p>Jonna har ett sinne för detaljer och en strävan efter att utnyttja allas fulla kompetens. Hon håller ordning och reda samt ser till att företaget utvecklas.
+                        </p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Jonna<br>Bauer</h1>
+                        <h3>Administratör</h3>
+                    </div>
+                    <h5><em>"Don´t be afraid to give up the good to go for the great."</em></h5>
+                </div>
+
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="andreasImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Andreas.jpg" alt="">
+                        <div id="andreasText" class="textbox cardShadow displayFalse"><p>Med ett öga för design och bred kompetens inom programmering kan Andreas skapa den perfekta hemsidan, och även se till att  tekniken fungerar.</p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Andreas<br>Olsson</h1>
+                        <h3>Webmaster</h3>
+                    </div>
+                    <h5><em>"Fail often and fast"</em></h5>
+                </div>
+
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="alexImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Alex.jpg" alt="">
+                        <div id="alexText" class="textbox cardShadow displayFalse"><p>Alex är kreativ och kommunikativ. Har alltid en positiv inställning och förstår sig på våra konsumenter och deras behov, vilket gör honom till en toppensäljare.</p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Alex<br>Bergqvist</h1>
+                        <h3>Säljare</h3>
+                    </div>
+                    <h5><em>"It´s not the size of the toaster that toasts the bread."</em></h5>
+                </div>
+
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="fannyImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Fanny.jpg" alt="">
+                        <div id="fannyText" class="textbox cardShadow displayFalse"><p>Med sin kunskap om sociala medier och sin förmåga att nå ut till människor har Fanny koll på marknaden och ett nyttigt kontaktnät för att driva företaget framåt. </p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Fanny<br>Norman</h1>
+                        <h3>Marknadsföring</h3>
+                    </div>
+                    <h5><em>"Before anything else, preparation is the key to success."</em></h5>
+                </div>
+
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="joelImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Joel.jpg" alt="">
+                        <div id="joelText" class="textbox cardShadow displayFalse"><p>Joel har en fundamental förståelse för Excel och företagsekonomi. Detta tillsammans med hans analytiska förmåga gör att han passar perfekt som ekonomiansvarig.</p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Joel<br>Almqvist</h1>
+                        <h3>Ekonomiansvarig</h3>
+                    </div>
+                    <h5><em>"You miss 100% of the shots you don´t take."</em></h5>
+                </div>
+
+                <div class="profile">
+                    <div class="imgContainer">
+                        <img id="vilgotImg" class="profileImg cardShadow displayTrue" src="./Images/portraits/Vilgot.jpg" alt="">
+                        <div id="vilgotText" class="textbox cardShadow displayFalse"><p>Vilgot är lösningsorienterad och kreativ samt har en bra överblick över produktionen. Han ser till att tillverkningen alltid är effektiv och att våra produkter håller hög kvalité.</p></div>
+                    </div>
+                    <div class="profileInfo cardShadow">
+                        <h1>Vilgot<br>Holtmann</h1>
+                        <h3>Produktionsansvarig</h3>
+                    </div>
+                    <h5><em>"Better late than never"</em></h5>
+                </div>
+            </div>
+
+            <div class="location">
+                <h2>Robotvägen 4, 721 36</h2>
+            </div>
+    
+            <div class="footer">
+                <div class="transitionBottom_parent">
+                    <div class="transitionWhiteBottom"></div>
+                </div>
+                <ul>
+                    <li><a id="productsBtn3">Produkter</a></li>
+                    <li><a id="processBtn3">Process</a></li>
+                    <li><a id="aboutUsBtn3">Om oss</a></li>
+                    <li><a class="contactBtn2" id="contactBtn2"><span>Kontakta oss</span></a></li>
+                </ul>
+
+                <div class="contactCardParent">
+                    <div class="contactCard2 displayFalse" id="contactCard2">
+                        <h3>info@snackiuf.se</h3>
+                        <!-- <button id="copy1">Kopiera mailaddress</button> -->
+                        <i class="fas fa-times" id="contactCloseBtn2"></i>
+                        <i id="insta2" class="fab fa-instagram"><span id="igtext2">@snackiuf</span></i>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- End of About us -->
+
+
+    <!-- Scripts <script src="liveDisplay.js"></script> -->
+    <script src="smoothScroll.js"></script>
+    <script src="contactCard.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

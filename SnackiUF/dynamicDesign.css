@@ -1,0 +1,644 @@
+
+
+
+@media screen and (min-width: 10px) {
+    .smallHeroHeader h1 {
+        font-size: 2.6rem;
+    }
+    .hero .sloganContainer h1 {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 6rem;
+    }
+    .hero .logoContainer img {
+        width: 150px;
+    }
+    .profile img {
+        max-width: 260px;
+        max-height: 320px;
+    }
+    .profileInfo {
+        width: 260px;
+        height: 180px;
+        justify-content: center;
+        align-content: center;
+    }
+    .profileInfo h1 {
+        font-size: 1.8rem;
+        width: 260px;
+        margin: 1rem auto 1rem auto;
+    }
+    .profileInfo h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .profile h5 {
+        line-height: 0.8;
+    }
+    .profile em {
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    .textbox {
+        width: 260px;
+        height: 320px;
+    }
+    .textbox p {
+        font-size: 1rem;
+    }
+    .ide h1 {
+        margin-bottom: 1rem;        
+    }
+    .ide p {
+        margin-top: 0.4rem;
+        margin-bottom: 0rem;
+        text-align: center;
+    }
+    .profiles {
+        max-width: 800px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .hero .sloganContainer h1 {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 6rem;
+    }
+    .hero .logoContainer img {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .hero .sloganContainer h1 {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 6rem;
+    }
+    .hero .logoContainer img {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .hero .sloganContainer h1 {
+        font-size: 5.8rem;
+    }
+    .hero .logoContainer img {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .hero .sloganContainer h1 {
+        font-size: 5.5rem;
+    }
+    .hero .logoContainer img {
+        width: 130px;
+    }
+    .hero .heroNav .floatLeft a, .hero .heroNav .floatRight a {
+        font-size: 0.9rem;
+        margin: 0 2.5rem 0.1rem 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero .heroNav .floatLeft a, .hero .heroNav .floatRight a {
+        margin: 0 2.2rem 0.1rem 2.2rem;
+    }
+}
+@media screen and (max-width: 560px) {
+    .hero .heroNav .floatLeft a, .hero .heroNav .floatRight a {
+        margin: 0 2rem 0.1rem 2rem;
+    }
+    .mainHeader h1 {
+        font-size: 3.4rem;
+    }
+    .menu .menuFooter {
+        top: 12rem;
+        width: 80%;
+    }
+    .menuFooter p {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 502px) {
+    .hero .sloganContainer h1 {
+        font-size: 5rem;
+    
+    }
+    .hero .logoContainer img {
+        width: 120px;
+    }
+    .mainHeader h1 {
+        font-size: 3rem;
+    }
+    .stepsContainer .option .imgContainer {
+        height: 8rem;
+    }
+    .option .imgContainer h5 {
+        font-size: 1.6rem;
+    }
+    .optHeader h1 {
+        font-size: 2rem;
+    }
+    .optHeader h5 {
+        font-size: 0.8rem;
+    }
+    button.dropBtn {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    #angleDown, #angleDown2 {
+        font-size: 1.4rem
+    }
+    .dropDown-content a {
+        font-size: 0.8rem
+    }
+    .profile img {
+        max-width: 230px;
+        max-height: 290px;
+    }
+    .profileInfo {
+        width: 230px;
+        height: 150px;
+        justify-content: center;
+        align-content: center;
+    }
+    .profileInfo h1 {
+        font-size: 1.8rem;
+        width: 230px;
+        margin: 1rem auto 1rem auto;
+    }
+    .profileInfo h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .profile h5 {
+        line-height: 0.8;
+    }
+    .profile em {
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    .textbox {
+        width: 230px;
+        height: 290px;
+    }
+    .textbox p {
+        font-size: 1rem;
+    }
+    .hero .heroNav .floatLeft a, .hero .heroNav .floatRight a {
+        font-size: 0.9rem;
+        margin: 0 1.5rem 0.1rem 1.5rem;
+    }
+    .textVar1.prodContent p {
+        font-size: 1.2rem;
+        width: 280px;
+        margin-top: 0.4rem;
+        margin-bottom: 0rem;
+        border: none;
+        text-align: center;
+        display: flex;
+    }
+    .textVar1.prodContent h1 {
+        font-size: 1.8rem;
+    }
+    div.textVar1.prodContent {
+        margin: 2rem auto 2rem auto;
+    }
+    #prodContent {
+        max-height: 180px;
+        margin: 1rem auto 1rem auto;
+    }
+    .ide {
+        width: 320px;
+        height: fit-content;
+        top: 16rem;
+    }
+    .ide h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;        
+    }
+    .ide p {
+        font-size: 1.2rem;
+        width: 280px;
+        margin-top: 0.4rem;
+        margin-bottom: 0rem;
+        border: none;
+        text-align: center;
+    }
+    .profiles {
+        top: 6rem;
+    }
+    .profile {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .generalProdInfo {
+        top: 12rem;
+    }
+    .productsSecondaryContainer {
+        padding-bottom: 0;
+    }
+    .profiles {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+
+    /* Transitions */
+    .transitionCreamTop, .transitionWhiteTop  {
+        position: relative;
+        top: 1px;
+    }
+    .transitionCreamBottom, .transitionWhiteBottom {
+        position: relative;
+        bottom: 1px;
+    }
+    /* ContactCard */
+    .contactCard1 h3, .contactCard2 h3, .contactCard3 h3 {
+        font-size: 1rem;
+        padding: 0.4rem 1.8rem 0 1.8rem
+    }
+    #igtext1, #igtext2, #igtext3 {
+        font-size: 1rem;
+    }
+    .contactCard2 {
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    /* Hero */
+    .hero .sloganContainer {
+        width: 100%;
+    }
+    .hero .sloganContainer h1 {
+        font-size: 5.5rem;
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero .logoContainer img {
+        width: 130px;
+    }
+    .hero .heroNav {
+        justify-content: space-around;
+    }
+    .floatLeft, .floatRight {
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero .heroNav .floatLeft a, .hero .heroNav .floatRight a {
+        font-size: 0.8rem;
+        margin: 0 0 0.1rem 0;
+    }
+
+
+
+    /* Menu*/
+    .menu {
+        height: 675px;
+    }
+    .mainHeader {
+        top: 3rem;
+    }
+    .mainHeader h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .mainHeader h5 {
+        font-size: 0.8rem;
+    }
+    .mainHeader .line {
+        width: 20%;
+        position: relative;
+        bottom: 0.6rem;
+    }
+    .stepsContainer {
+        top: 6rem;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .stepsContainer .option {
+        height: 7rem;
+        flex: 1 1 0px;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+    .stepsContainer .option .imgContainer {
+        height: 7rem;
+    }
+    .option .imgContainer h5 {
+        font-size: 1.2rem;
+    }
+    .menu .menuFooter {
+        top: 6rem;
+        width: 80%;
+    }
+    .menuFooter p {
+        font-size: 0.8rem;
+    }
+
+
+
+    /* Products */
+    .smallHeroHeader h1 {
+        font-size: 2.2rem;
+    }
+    .productsSecondaryContainer {
+        padding-bottom: 0;
+        height: 1200px;
+        position: relative;
+        top: 2rem;
+    }
+    .products .optHeader {
+        position: relative;
+        top: 6rem;
+    }
+    .generalProdInfo {
+        top: 9rem;
+    }
+    .optHeader h1 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+    .optHeader h5 {
+        font-size: 0.8rem;
+    }
+    button.dropBtn {
+        font-size: 0.565rem;
+    }
+    #angleDown, #angleDown2 {
+        font-size: 1rem
+    }
+    .dropDown-content a {
+        font-size: 0.565rem
+    }
+    .textVar1.prodContent p {
+        font-size: 1rem;
+        width: 280px;
+        margin-top: 0.4rem;
+        margin-bottom: 0rem;
+        border: none;
+        text-align: center;
+        display: flex;
+    }
+    .textVar1.prodContent h1 {
+        font-size: 1.4rem;
+    }
+    div.textVar1.prodContent {
+        margin: 2rem auto 2rem auto;
+    }
+    #prodContent {
+        max-height: 180px;
+        margin: 1rem auto 1rem auto;
+    }
+
+
+
+    /* Process */
+    .processSecondaryContainer {
+        height: 800px;
+    }
+    .process .optHeader {
+        top: 3rem;
+    }
+    .process .generalProdInfo {
+        top: 6rem ;
+    }
+    .vector {
+        height: 50px;
+        margin-top: 0.4rem;
+        margin-bottom: 0;
+    }
+
+
+
+    /* About us */
+    .mainHeader .line {
+        border-bottom: 5px solid #C6A07C;
+    }
+    .ide {
+        width: 320px;
+        height: fit-content;
+        top: 9rem;
+    }
+    .ide h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;        
+    }
+    .ide p {
+        font-size: 1rem;
+        width: 280px;
+        margin-top: 0.4rem;
+        margin-bottom: 0rem;
+        border: none;
+        text-align: center;
+    }
+    .profiles {
+        top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .profile {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .profile img {
+        max-width: 220px;
+        max-height: 280px;
+    }
+    .profileInfo {
+        width: 220px;
+        height: 140px;
+        justify-content: center;
+        align-content: center;
+    }
+    .profileInfo h1 {
+        font-size: 1.8rem;
+        width: 220px;
+        font-weight: 400;
+        margin: 1rem auto 1rem auto;
+    }
+    .profileInfo h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .profile h5 {
+        line-height: 0.8;
+    }
+    .profile em {
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    .textbox {
+        width: 220px;
+        height: 280px;
+    }
+    .textbox p {
+        font-size: 1rem;
+    }
+    .prodContent {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .textVar1 h1 {
+        font-size: 1.4rem;
+        text-align: center;
+        width: 320px;
+    }
+    .location h2 {
+        position: relative;
+        bottom: 10.5rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* Footer */
+    .footer {
+        margin: 0;
+        margin-top: 0rem;
+    }
+    .footer ul {
+        margin: 0;
+    }
+    .footer ul li a {
+        font-size: 0.9rem;
+    }
+
+
+
+
+
+
+
+    .hero .sloganContainer h1 {
+        font-size: 4rem;
+    }
+    .hero .logoContainer img {
+        width: 120px;
+    }
+    .stepsContainer .option .imgContainer {
+        height: 8rem;
+    }
+    .option .imgContainer h5 {
+        font-size: 1.6rem;
+    }
+    .optHeader h1 {
+        font-size: 2rem;
+    }
+    .optHeader h5 {
+        font-size: 0.8rem;
+    }
+    button.dropBtn {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    #angleDown, #angleDown2 {
+        font-size: 1.4rem
+    }
+    .dropDown-content a {
+        font-size: 0.8rem
+    }
+    .profile img {
+        max-width: 230px;
+        max-height: 290px;
+    }
+    .profileInfo {
+        width: 230px;
+        height: 150px;
+        justify-content: center;
+        align-content: center;
+    }
+    .profileInfo h1 {
+        font-size: 1.8rem;
+        width: 230px;
+        margin: 1rem auto 1rem auto;
+    }
+    .profileInfo h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .profile h5 {
+        line-height: 0.8;
+    }
+    .profile em {
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    .textbox {
+        width: 230px;
+        height: 290px;
+    }
+    .textbox p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 376px) {
+    .hero .sloganContainer h1 {
+        font-size: 3.8rem;
+    }
+    .hero .logoContainer img {
+        width: 110px;
+    }
+    .option .imgContainer h5 {
+        font-size: 1.4rem;
+    }
+    .optHeader h1 {
+        font-size: 2rem;
+    }
+    .optHeader h5 {
+        font-size: 0.8rem;
+    }
+    button.dropBtn {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    #angleDown, #angleDown2 {
+        font-size: 1.4rem
+    }
+    .dropDown-content a {
+        font-size: 0.8rem
+    }
+    .profile img {
+        max-width: 230px;
+        max-height: 290px;
+    }
+    .profileInfo {
+        width: 230px;
+        height: 150px;
+        justify-content: center;
+        align-content: center;
+    }
+    .profileInfo h1 {
+        font-size: 1.8rem;
+        width: 230px;
+        margin: 1rem auto 1rem auto;
+    }
+    .profileInfo h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .profile h5 {
+        line-height: 0.8;
+    }
+    .profile em {
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    .textbox {
+        width: 230px;
+        height: 290px;
+    }
+    .textbox p {
+        font-size: 1rem;
+    }
+}
