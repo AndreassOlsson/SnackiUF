@@ -1,5 +1,5 @@
 # SnackiUF
-Company webpage created with HTML, JavaScript and CSS
+Company webpage created with HTML, JavaScript and CSS. Below is a selection of images from the website!
 ![image](https://user-images.githubusercontent.com/59232492/207084057-d45b93a2-39c9-42b7-927a-6d769c19f787.png)
 ![image](https://user-images.githubusercontent.com/59232492/207084245-8a51fea7-47d8-4c1d-8267-d5014371d813.png)
 ![image](https://user-images.githubusercontent.com/59232492/207085734-cefbc0ce-6410-413a-812b-53973345f7c3.png)
